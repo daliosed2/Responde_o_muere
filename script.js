@@ -48,10 +48,15 @@ function checkAnswer(selected) {
     resultDiv.textContent = "✅ Has sobrevivido este nivel.";
     document.getElementById("nextBtn").style.display = "block";
   } else {
-    resultDiv.textContent = "☠️ Te atraparon... Fin del juego.";
+    resultDiv.textContent = "";
     document.getElementById("options").innerHTML = "";
+
+    // Mostrar pantalla roja de muerte
+    const deathScreen = document.getElementById("deathScreen");
+    deathScreen.style.display = "block";
   }
 }
+
 
 document.getElementById("nextBtn").onclick = () => {
   currentLevel++;
