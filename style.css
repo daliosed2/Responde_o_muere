@@ -1,32 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 body {
-  background-color: #111;
-  color: #eee;
-  font-family: 'Courier New', monospace;
-  padding: 30px;
-  text-align: center;
+  background-image: url('https://i.imgur.com/5Jzkt5k.jpeg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'VT323', monospace;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
   max-width: 600px;
-  margin: auto;
-  border: 2px solid #444;
-  padding: 20px;
-  background-color: #222;
-  border-radius: 10px;
+  box-shadow: 0 0 10px #0f0;
+  text-align: center;
 }
 
-button {
-  margin-top: 20px;
+h1 {
+  color: #0f0;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+#story {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+#question {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#options button {
+  background-color: #111;
+  border: 2px solid #0f0;
+  color: #0f0;
   padding: 10px 20px;
-  font-size: 16px;
-  background-color: #c0392b;
-  color: white;
-  border: none;
+  margin: 10px 5px;
+  font-size: 1.1rem;
   cursor: pointer;
   border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
-button:hover {
-  background-color: #e74c3c;
+#options button:hover {
+  background-color: #0f0;
+  color: #000;
 }
-  
+
+#result {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  min-height: 24px;
+}
+
+#nextBtn {
+  margin-top: 20px;
+  background-color: #f39c12;
+  color: #000;
+  padding: 10px 25px;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#nextBtn:hover {
+  background-color: #d35400;
+}
